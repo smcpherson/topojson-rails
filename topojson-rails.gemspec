@@ -18,8 +18,5 @@ Gem::Specification.new do |gem|
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.require_paths = ["lib"]
 
-  gem.signing_key   = File.expand_path("~/.gem/private_key.pem") if $0 =~ /gem\z/
-  gem.cert_chain    = ["certs/bai.pem"]
-
   gem.add_dependency "railties", ">= 3.0", "< 5.0"
 end
